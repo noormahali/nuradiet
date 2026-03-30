@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    var android = "https://play.google.com/store/apps/details?id=cocopalms.nuradiet.app&pcampaignid=web_share";
+    var ios = "https://apps.apple.com/kw/app/nura-diet/id6754834763";
+
+    if (/android/i.test(userAgent)) {
+      window.location.href = android;
+    } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+      window.location.href = ios;
+    } else {
+      window.location.href = ios;
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
